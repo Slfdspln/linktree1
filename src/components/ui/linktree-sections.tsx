@@ -7,35 +7,26 @@ import { cn } from "@/lib/utils";
 export function LinktreeSections() {
   return (
     <div className="w-full max-w-2xl mx-auto p-4 relative">
-      {/* Enhanced Sparkles Background */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-10 left-10 text-pink-400 text-3xl animate-pulse">✨</div>
-        <div className="absolute top-32 right-16 text-rose-400 text-xl animate-bounce delay-300">💖</div>
-        <div className="absolute top-64 left-8 text-pink-500 text-2xl animate-pulse delay-500">⭐</div>
-        <div className="absolute bottom-32 right-12 text-rose-300 text-3xl animate-bounce delay-700">✨</div>
-        <div className="absolute bottom-64 left-16 text-pink-400 text-xl animate-pulse delay-1000">💫</div>
-        <div className="absolute top-48 right-8 text-rose-400 text-2xl animate-bounce delay-200">🌸</div>
-        <div className="absolute top-20 right-32 text-pink-300 text-lg animate-pulse delay-800">💎</div>
-        <div className="absolute bottom-48 left-24 text-rose-500 text-xl animate-bounce delay-400">🦋</div>
-        <div className="absolute top-80 left-32 text-pink-400 text-lg animate-pulse delay-600">🌺</div>
-        <div className="absolute bottom-20 right-24 text-rose-400 text-2xl animate-bounce delay-900">✨</div>
-        <div className="absolute top-36 left-4 text-pink-300 text-lg animate-pulse delay-1200">💕</div>
-        <div className="absolute bottom-80 right-4 text-rose-300 text-xl animate-bounce delay-100">🌙</div>
-      </div>
 
       <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 relative">
         <LinkSection
           area="md:col-span-2"
+          icon={<ExternalLink className="h-5 w-5" />}
+          title="VibeCode"
+          description="My startup - revolutionizing coding experiences"
+          href="https://vibecoding.cash"
+          size="large"
+        />
+        <LinkSection
           icon={<Instagram className="h-5 w-5" />}
           title="Instagram"
-          description="Follow my daily adventures and behind-the-scenes content ✨"
+          description="Follow my daily adventures and content ✨"
           href="https://www.instagram.com/slfdspln/?hl=en"
-          size="large"
         />
         <LinkSection
           icon={<Video className="h-5 w-5" />}
           title="TikTok"
-          description="Quick tips and fun content"
+          description="Quick tips and fun creative content"
           href="https://www.tiktok.com/@slfdsplnn"
         />
         <LinkSection
@@ -83,7 +74,7 @@ const LinkSection = ({ area, icon, title, description, href, size = "default" }:
         href={href}
         className={cn(
           "block relative rounded-[1.25rem] border-[0.75px] p-2 transition-transform hover:scale-[1.02] focus:scale-[1.02] focus:outline-none",
-          size === "large" ? "min-h-[10rem] md:rounded-[1.5rem] md:p-3" : "min-h-[8rem] md:rounded-[1.25rem]",
+          size === "large" ? "min-h-[10rem] md:rounded-[1.5rem] md:p-3" : "h-[8rem] md:rounded-[1.25rem]",
 "border-rose-400 bg-gradient-to-br from-rose-100 via-pink-100 to-rose-200 dark:from-rose-950 dark:via-pink-950 dark:to-rose-900 shadow-lg"
         )}
       >
