@@ -13,7 +13,7 @@ export function LinktreeSections() {
           area="md:col-span-2"
           icon={<ExternalLink className="h-5 w-5" />}
           title="VibeCode"
-          description="My startup - revolutionizing coding experiences"
+          description="Connect with developers who prioritize deep work and flow state. Learn, build, and vibe together."
           href="https://vibecoding.cash"
           size="large"
         />
